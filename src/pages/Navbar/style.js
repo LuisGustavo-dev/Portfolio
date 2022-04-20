@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
-export const Body = styled.div`
-    width: 100%; 
-    height: auto;
+export const Background = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 `

@@ -1,12 +1,10 @@
 import React from 'react';
-import { Body, Box, Title } from "./style";
+import { Body} from "./style";
 
-export default function Cadastro() {
+export default function Projetos() {
     return(
         <Body>
-            <Box>
-                <Title>Login</Title>
-            </Box>
+            <h1>Projetos</h1>
         </Body>
     );
 }

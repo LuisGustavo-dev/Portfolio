@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
-export const Body = styled.body`
-    padding: 10vh;
+export const Background = styled.div`
     display: flex;
-    justify-content: center;    
-`;
+    justify-content: center;
+`
 
 export const Img = styled.img`
-    width: 500px;
-    height: 500px;
-`;
+    width: 100%;
+    height: 50vh;
+    
+`
