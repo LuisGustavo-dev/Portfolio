@@ -1,16 +1,42 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import fundo from './images/wallpaper.jpg';
+import { useNavigate } from 'react-router-dom';
+import fundo from '../../assets/images/wallpaper.jpg';
 import { 
     Background,
-    Img
+    Img,
+    Div,
+    Form,
+    Label,
+    Input,
+    Button
 } from "./style";
 
 export default function Home() {
+
+    const navigate = useNavigate()
+    async function handleSubmit(e){
+        e.preventDefault();
+        navigate("/projetos")
+    }
+
     return (
         <Background>
             <Img src={fundo} className="bg-image"/>
-            
+            <Div>
+                <Form onSubmit={handleSubmit}>
+                    <h2 style={{ textTransform: "uppercase" }}>Cadastro</h2>
+                    <Label>Email</Label>
+                    <Input type="email" placeholder="usuario@gmail.com" required></Input><br/>
+
+                    <Label>Senha</Label>
+                    <Input type="password" placeholder="*******" required></Input><br/>
+
+                    <Label>Confirmar senha</Label>
+                    <Input type="password" placeholder="*******" required></Input><br/>
+
+                    <Button >Entrar</Button>
+                </Form>
+            </Div>
         </Background>
     );
 }

@@ -6,7 +6,7 @@ export default createGlobalStyle`
         /* Cores globais, para usar chame assim: background-color: var(--purple-color) */
         --white-color: #fff;
         --black-color: #101010;
-
+        
     }
     *{
         box-sizing: border-box;

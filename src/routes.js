@@ -10,7 +10,7 @@ import Contato from "./pages/Contato";
 export default function Rotas() {
     return(
         <BrowserRouter>
-            <Navbar/>   
+            <Navbar/>
             <Routes>
                 <Route path="/" element={<Index/>} />
                 <Route path="/projetos" element={<Projetos/>} />

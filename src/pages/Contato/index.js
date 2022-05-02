@@ -1,5 +1,7 @@
 import React from 'react';
-import { Body, Box, Title } from "./style";
+import { 
+    Body,
+} from "./style";
 
 export default function Contato() {
     return(
