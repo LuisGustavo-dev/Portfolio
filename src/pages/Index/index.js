@@ -14,6 +14,7 @@ import {
 export default function Home() {
 
     const navigate = useNavigate()
+    
     async function handleSubmit(e){
         e.preventDefault();
         navigate("/projetos")

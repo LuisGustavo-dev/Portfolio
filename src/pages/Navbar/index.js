@@ -19,7 +19,6 @@ export default function Navbar() {
   }, [location.pathname]);
 
   async function handleSubmit(){
-     
       navigate("/")
   }
 
@@ -29,7 +28,7 @@ export default function Navbar() {
       <A href="/projetos">Projetos</A>
       <A href="/contato">Contato</A>
       <A href="/">Em breve</A>
-      <Button type="submit" onSubmit={handleSubmit}>Sair</Button>
+      <Button type="submit" onClick={handleSubmit}>Sair</Button>
     </Background>
   );
 }

@@ -26,14 +26,12 @@ export const A = styled.a`
     font-size: 20px;  
     
     :hover { 
-        padding: 0 5px;
         background: white;
         transition: .5s;
         border-radius: 5px;
         color: black;
     }
     :active{
-        padding: 0 5px;
         background: white;
         transition: .5s;
     }

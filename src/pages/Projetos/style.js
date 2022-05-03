@@ -1,8 +1,28 @@
 import styled from 'styled-components'
 
-export const Body = styled.body`
+export const Div = styled.div`
+    display: grid;
+    place-items: center;
+    
+    width: 100vw;
+`;
+
+export const Carousel = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-`
+
+    width: 100%;
+    height: 400px;
+`;
+
+export const Img = styled.img`
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+`;
+
+export const Button = styled.button`
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+`;
