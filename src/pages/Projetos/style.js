@@ -22,6 +22,8 @@ export const Img = styled.img`
 `;
 
 export const Button = styled.button`
+    wi
+
     background-color: transparent;
     border: none;
     cursor: pointer;
