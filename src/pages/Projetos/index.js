@@ -1,7 +1,7 @@
-import React from 'react';
-import carrosel1 from '../../assets/images/carrosel1.jpg';
-import carrosel2 from '../../assets/images/carrosel2.jpg';
-import carrosel3 from '../../assets/images/carrosel3.jpg';
+import { React, useRef } from 'react';
+import carousel1 from '../../assets/images/carousel1.jpg';
+import carousel2 from '../../assets/images/carousel2.jpg';
+import carousel3 from '../../assets/images/carousel3.jpg';
 import { 
     GoChevronLeft,
     GoChevronRight
@@ -16,29 +16,33 @@ import {
 
 export default function Projetos() {
 
-    async function handleLeftClick(){
+    const carousel = useRef(null);
 
-    }
+    const handleLeftClick = (e) => {
+        e.preventDefault();
+        carousel.current.scrollLeft -= carousel.current.offsetWidth;
+    };
 
-    async function handleRightClick(){
-
-    }
+    const handleRightClick = (e) => {
+        e.preventDefault();
+        carousel.current.scrollLeft += carousel.current.offsetWidth;
+    };
 
     return(
         <Div>
-            <Carousel>
-                <Img src={carrosel2} className="bg-image"/>
-                <Img src={carrosel1} className="bg-image"/>
-                <Img src={carrosel3} className="bg-image"/>
+            <Carousel ref={carousel}>
+                <Img src={carousel2} className="bg-image"/>
+                <Img src={carousel1} className="bg-image"/>
+                <Img src={carousel3} className="bg-image"/>
             </Carousel>
-            <div style={{ display: 'flex', flexDirection: 'row'}}>
+            {/* <div style={{ display: 'flex', flexDirection: 'row'}}>
                 <Button onClick={handleLeftClick}>
                     <GoChevronLeft/>
                 </Button>
                 <Button onClick={handleRightClick}>
                     <GoChevronRight/>
                 </Button>
-            </div>
+            </div> */}
         </Div>
     );
 }
