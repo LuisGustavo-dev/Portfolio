@@ -17,7 +17,7 @@ export default function Home() {
     
     async function handleSubmit(e){
         e.preventDefault();
-        navigate("/projetos")
+        navigate("/home")
     }
 
     return (

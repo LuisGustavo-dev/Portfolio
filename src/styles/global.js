@@ -9,6 +9,7 @@ export default createGlobalStyle`
 
         --primary-color: #28502E;
         --secundary-color: #090C02;
+        
         --hover-color: #FCF7FF;
         --button-color: #131515;
         
