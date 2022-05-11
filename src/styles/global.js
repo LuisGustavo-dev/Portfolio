@@ -6,6 +6,11 @@ export default createGlobalStyle`
         /* Cores globais, para usar chame assim: background-color: var(--purple-color) */
         --white-color: #fff;
         --black-color: #101010;
+
+        --primary-color: #28502E;
+        --secundary-color: #090C02;
+        --hover-color: #FCF7FF;
+        --button-color: #131515;
         
     }
     *{

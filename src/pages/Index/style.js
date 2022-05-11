@@ -91,12 +91,12 @@ export const Button = styled.button`
     height: 50px;
     width: 300px;
 
-    background: #91171F;
+    background: var(--white-color);
     border-radius: 25px;
     border: none;
     outline: none;
     
-    color : #fff;
+    color: var(--black-color);
     align-items: center;    
     font-size: 15px;
     cursor: pointer;

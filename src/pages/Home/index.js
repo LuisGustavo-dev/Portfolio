@@ -3,10 +3,10 @@ import {
     Div,
 } from "./style";
 
-export default function Projetos() {
+export default function Home() {
     return(
         <Div>
-            <h1>Projetos</h1>
+            <h1>Home</h1>
         </Div>
     );
 }
