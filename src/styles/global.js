@@ -7,8 +7,9 @@ export default createGlobalStyle`
         --white-color: #fff;
         --black-color: #101010;
 
-        --primary-color: #28502E;
-        --secundary-color: #090C02;
+        --primary-color: #1E3F20;
+        --secundary-color: #5D9570;
+
         --hover-color: #FCF7FF;
         --button-color: #131515;
         
@@ -19,6 +20,5 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         outline: 0;
-        
     }
-`
+`;

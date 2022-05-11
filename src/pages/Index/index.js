@@ -17,7 +17,7 @@ export default function Home() {
     
     async function handleSubmit(e){
         e.preventDefault();
-        navigate("/projetos")
+        navigate("/home")
     }
 
     return (
@@ -35,7 +35,7 @@ export default function Home() {
                     <Label>Confirmar senha</Label>
                     <Input type="password" placeholder="*******" required></Input><br/>
 
-                    <Button >Entrar</Button>
+                    <Button>Entrar</Button>
                 </Form>
             </Div>
         </Background>
