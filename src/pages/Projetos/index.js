@@ -1,12 +1,12 @@
 import { React } from 'react';
 import { 
-    Div,
+    Body,
 } from "./style";
 
 export default function Projetos() {
     return(
-        <Div>
+        <Body>
             <h1>Projetos</h1>
-        </Div>
+        </Body>
     );
 }

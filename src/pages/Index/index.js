@@ -1,4 +1,5 @@
 import React from 'react';
+import Swal from 'sweetalert2'  
 import { useNavigate } from 'react-router-dom';
 import fundo from '../../assets/images/wallpaper.jpg';
 import { 
@@ -18,6 +19,13 @@ export default function Home() {
     async function handleSubmit(e){
         e.preventDefault();
         navigate("/home")
+        Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Bem-Vindo',
+        showConfirmButton: false,
+        timer: 1000
+        })
     }
 
     return (
@@ -25,14 +33,11 @@ export default function Home() {
             <Img src={fundo} className="bg-image"/>
             <Div>
                 <Form onSubmit={handleSubmit}>
-                    <h2 style={{ textTransform: "uppercase" }}>Cadastro</h2>
+                    <h2 style={{ textTransform: "uppercase", marginBottom: "50px"}}>Portfólio</h2>
                     <Label>Email</Label>
                     <Input type="email" placeholder="usuario@gmail.com" required></Input><br/>
 
                     <Label>Senha</Label>
-                    <Input type="password" placeholder="*******" required></Input><br/>
-
-                    <Label>Confirmar senha</Label>
                     <Input type="password" placeholder="*******" required></Input><br/>
 
                     <Button>Entrar</Button>

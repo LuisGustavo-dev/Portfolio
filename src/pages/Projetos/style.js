@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-export const Div = styled.div`
+export const Body = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     
-    
+    height: 90vh;
 `;

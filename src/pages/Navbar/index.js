@@ -19,17 +19,17 @@ export default function Navbar() {
   }, [location.pathname]);
 
   return (
-    <Nav show = {show}>
-        <Bars/>
-        <NavLink to="/"> Portfólio </NavLink>
-        <NavMenu>
-            <NavLink to="/home"> Home </NavLink>
-            <NavLink to="/projetos"> Projetos </NavLink>
-            <NavLink to="/contato"> Contato </NavLink>
-        </NavMenu >
-        <NavBtn>
-            <NavBtnLink to="/"> Sair </NavBtnLink>
-        </NavBtn>
-    </Nav> 
+        <Nav show = {show}>
+          <Bars/>
+          <NavLink to="/"> Portfólio </NavLink>
+          <NavMenu>
+              <NavLink to="/home"> Home </NavLink>
+              <NavLink to="/projetos"> Projetos </NavLink>
+              <NavLink to="/contato"> Contato </NavLink>
+          </NavMenu >
+          <NavBtn>
+              <NavBtnLink to="/"> Sair </NavBtnLink>
+          </NavBtn>
+        </Nav> 
   );
 }
