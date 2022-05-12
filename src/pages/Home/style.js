@@ -8,18 +8,18 @@ export const Div = styled.div`
 `;
 
 export const Img = styled.img`
-    width: 100%;
-    height: 400px;
+    display: block;
+    margin: 0px auto;
     object-fit: cover;
-
-    margin: 0 20px;
+    width: 100%;
+    height: 500px;
 `;
 
 export const Circle = styled.div`
     display: flex;
     flex-direction: row;
 
-    margin: 10px;
+    margin: 20px;
 
     cursor: pointer;
 `;

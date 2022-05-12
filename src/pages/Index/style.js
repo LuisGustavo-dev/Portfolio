@@ -92,7 +92,7 @@ export const Button = styled.button`
     height: 50px;
     width: 300px;
 
-    background: var(--secundary-color);
+    background: var(--button-color);
     border-radius: 25px;
     border: none;
     outline: none;
@@ -101,7 +101,13 @@ export const Button = styled.button`
     align-items: center;    
     font-size: 15px;
     cursor: pointer;
-
+    
+    &:hover {
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    background: var(--white-color);
+    color: var(--black-color);
+  }
     @media (max-width: 450px) {
         width: 60%;
     }

@@ -7,11 +7,11 @@ export default createGlobalStyle`
         --white-color: #fff;
         --black-color: #101010;
 
-        --primary-color: #1E3F20;
+        --primary-color: #3772FF;
         --secundary-color: #5D9570;
 
-        --hover-color: #FCF7FF;
-        --button-color: #131515;
+        --hover-color: #3772FF;
+        --button-color: #3772FF;
         
     }
     *{

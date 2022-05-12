@@ -1,7 +1,9 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
+import { IoLogoReact } from "react-icons/io5";
 import { useLocation } from "react-router-dom";
 import { 
   Nav,
+  Logo,
   NavLink,
   Bars,
   NavMenu,
@@ -21,7 +23,9 @@ export default function Navbar() {
   return (
         <Nav show = {show}>
           <Bars/>
-          <NavLink to="/"> Portfólio </NavLink>
+          <Logo to="/home">
+            <IoLogoReact  size={50} ></IoLogoReact>
+          </Logo>
           <NavMenu>
               <NavLink to="/home"> Home </NavLink>
               <NavLink to="/projetos"> Projetos </NavLink>
