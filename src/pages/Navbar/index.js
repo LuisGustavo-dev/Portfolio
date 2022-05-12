@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <Nav show = {show}>
         <Bars/>
-        <NavLink to="/"> Logo </NavLink>
+        <NavLink to="/"> Portfólio </NavLink>
         <NavMenu>
             <NavLink to="/home"> Home </NavLink>
             <NavLink to="/projetos"> Projetos </NavLink>

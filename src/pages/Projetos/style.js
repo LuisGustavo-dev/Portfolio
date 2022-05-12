@@ -5,5 +5,5 @@ export const Div = styled.div`
     justify-content: center;
     align-items: center;
     
-    height: 90vh;
+    
 `;

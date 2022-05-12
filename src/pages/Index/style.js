@@ -3,12 +3,13 @@ import styled from 'styled-components'
 export const Background = styled.div`
     display: flex;
     justify-content: center;
+    height: 100vh;
 `;
 
 export const Img = styled.img`
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
     :before{
         content: "";
@@ -25,7 +26,7 @@ export const Div = styled.div`
     align-items: center;
 
     border: 1px solid #fff;
-    background: rgba(0,0,0,.5);
+    background: rgba(0,0,0,.6);
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
 
