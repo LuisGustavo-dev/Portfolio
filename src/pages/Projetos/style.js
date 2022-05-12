@@ -6,10 +6,13 @@ export const Body = styled.div`
     align-items: center;
     flex-direction: column;
     
-    height: 90vh;
-    margin: 0 100px;
+    height: 100vh;
+    margin: 5% 100px;
 
-    
+    @media screen and (max-width: 768px) {
+        margin-top: 25%;
+    }
+
 `;
 export const Container = styled.div`
     display: flex;
@@ -24,12 +27,13 @@ export const Container = styled.div`
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
+        margin-top: 40%;
     }
-
+    
     .middle {
         position: absolute;
-        top: 00%;
-        left: 00%;
+        top: 50%;
+        left: 50%;
         transition: .5s ease;
         opacity: 0;
 
@@ -41,18 +45,12 @@ export const Container = styled.div`
             opacity: 1;
         }
     }
-    .text {
-        background-color: #04AA6D;
-        color: white;
-        font-size: 16px;
-        padding: 16px 32px;
-    }
 `;
 
 export const Img = styled.img`
     display: block;
     
-    width: 40%;
+    width: 45%;
     height: auto;
     
     opacity: 1;
@@ -72,30 +70,54 @@ export const Img = styled.img`
 `;
 
 export const Card = styled.div`
-    display: flex;
     justify-content: center;
 
     width: 50%;
-    height: 350px;
+    height: 80%;
 
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 15px;
     
     &:hover{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 15px;
     }
 
-    h1{ 
+    h1 { 
         margin: 10px 50px;
         font-size: 2rem;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    p {
+        margin: 10px 20px;
+        font-size: 1.2rem;
         font-family: 'Nunito', sans-serif;
     }
 
     @media screen and (max-width: 768px) {
         width: 100%;     
         margin: 10px;
+        h1{
+            font-size: 1rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+        .icon {
+            size: 40;
+        }
     }
 `;
 
+export const Icons = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    .icon{
+        margin: 100px;
+    }
+`;
 
