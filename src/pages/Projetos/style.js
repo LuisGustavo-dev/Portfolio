@@ -12,17 +12,17 @@ export const Body = styled.div`
     @media screen and (max-width: 768px) {
         margin-top: 25%;
     }
-
 `;
 export const Container = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
 
+    margin: 50px;
     position: relative;
 
     width: 90%;
-    height: 350px;
+    height: 450px;
 
 
     @media screen and (max-width: 768px) {
@@ -50,8 +50,8 @@ export const Container = styled.div`
 export const Img = styled.img`
     display: block;
     
-    width: 45%;
-    height: auto;
+    width: 35%;
+    height: 100%;
     
     opacity: 1;
     transition: .5s ease;
@@ -73,7 +73,7 @@ export const Card = styled.div`
     justify-content: center;
 
     width: 50%;
-    height: 80%;
+    height: 100%;
 
 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
