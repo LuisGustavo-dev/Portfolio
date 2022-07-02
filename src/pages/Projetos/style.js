@@ -11,7 +11,8 @@ export const Body = styled.div`
 
     @media screen and (max-width: 768px) {
         height: 100vh;
-        margin: 15% 100px;
+        margin: 100px;
+        margin-top: calc(100% + 150px);
     }
 `;
 
@@ -27,9 +28,7 @@ export const Container = styled.div`
     height: 450px;
 
     @media screen and (max-width: 768px) {
-        width: 100%;
         flex-direction: column;
-        margin-top: 40vw;
     }
 `;
 
@@ -76,6 +75,8 @@ export const Card = styled.div`
 `;
 
 export const Text = styled.div`
+    display: flex;
+    flex-wrap: wrap;
     h1{
         margin: 10px 50px;
         font-size: 2rem;
@@ -96,10 +97,3 @@ export const Text = styled.div`
         }
     }
 `;
-
-export const Icons = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`;
-

@@ -1,5 +1,4 @@
 import { React } from 'react';
-import { IoLogoGithub, IoLogoReact, IoLogoNodejs } from "react-icons/io5";
 import rh from '../../assets/images/Rh.png'
 import aluno from '../../assets/images/AlunoSaudavel.png'
 import { 
@@ -7,7 +6,6 @@ import {
     Container,
     Card,
     Text,
-    Icons,
     Img,
 } from "./style";
 
@@ -23,11 +21,6 @@ export default function Projetos() {
                     <p>O projeto foi criado na intenção de auxiliar os estudantes 
                        de enfermagem na manibulação de dados dos alunos.</p>
                     </Text>
-                    <Icons>
-                        <IoLogoGithub size={70} className="Icon"/>
-                        <IoLogoReact size={70} className="Icon"/>
-                        <IoLogoNodejs size={70} className="Icon"/>
-                    </Icons>
                 </Card>
             </Container>
             <Container>
@@ -38,11 +31,6 @@ export default function Projetos() {
                     <p>O projeto foi criado na intenção de auxiliar o setor de RH 
                        na adição de novos funcionarios, criação de planilhas e tabelas.</p>
                     </Text>
-                    <Icons>
-                        <IoLogoGithub size={70} className="Icon"/>
-                        <IoLogoReact size={70} className="Icon"/>
-                        <IoLogoNodejs size={70} className="Icon"/>
-                    </Icons>
                 </Card>
             </Container>
             <Container>
@@ -53,11 +41,6 @@ export default function Projetos() {
                     <p>O projeto foi criado na intenção de auxiliar o setor de RH 
                        na adição de novos funcionarios, criação de planilhas e tabelas.</p>
                     </Text>
-                    <Icons>
-                        <IoLogoGithub size={70} className="Icon"/>
-                        <IoLogoReact size={70} className="Icon"/>
-                        <IoLogoNodejs size={70} className="Icon"/>
-                    </Icons>
                 </Card>
             </Container>
         </Body>
